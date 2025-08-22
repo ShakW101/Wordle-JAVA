@@ -261,7 +261,7 @@ public class Wordle extends JFrame{
 
     private void getWords(){
         try {
-            BufferedReader br = new BufferedReader(new FileReader("D:\\Wordle List\\word_list.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src/resources/word_list.txt"));
 
 
             String line = br.readLine();
@@ -284,7 +284,7 @@ public class Wordle extends JFrame{
     private void loadDictionary(){
         test.setText("Loading dictionary...");
         try {
-            BufferedReader br = new BufferedReader(new FileReader("D:\\Wordle List\\dictionary.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src/resources/dictionary.txt"));
 
 
             String line = br.readLine();
@@ -520,9 +520,9 @@ public class Wordle extends JFrame{
                 }
             }
             if(fin == 5 && gaveup == false){
-                JOptionPane.showMessageDialog(null, "HOLY CRAP YOU LUCKY BISH!");
+                JOptionPane.showMessageDialog(null, "YOU LUCKY THING!");
             }else if(fin == 5 && gaveup == true){
-                JOptionPane.showMessageDialog(null, "YOU CHEATING STUPID LIL ASS");
+                JOptionPane.showMessageDialog(null, "YOU CHEATED! 😒");
             }
         }else if(track == 9){
             int bla = 0;
